@@ -14,7 +14,7 @@ navigator.mediaDevices.getUserMedia({ video: true })
                 );
             });
             sfuRoom.on('removeStream', stream => {
-                $('#video_' + stream.id).remove();
+                $('#video_' + stream.peerId).remove();
             });
         });
     });
